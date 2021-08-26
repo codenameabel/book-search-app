@@ -1,0 +1,32 @@
+{
+  "name": "book-search-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenameabel/book-search-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codenameabel/book-search-app/issues"
+  },
+  "homepage": "https://github.com/codenameabel/book-search-app#readme",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
