@@ -98,7 +98,7 @@ const SavedBooks = () => {
     let savedBooks = userData.me.savedBooks;
     return (
       <>
-        <Jumbotron fluid className='text-light bg-info'>
+        <Jumbotron fluid className='text-light bg-dark'>
           <Container>
             <h1>Viewing saved books!</h1>
             {loading && <h2>LOADING...</h2>}
